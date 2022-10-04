@@ -1,0 +1,39 @@
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        
+    padding: 20px 10px 20px 10px;
+    margin: 10px 5px 10px 5px;
+
+    border: 1px solid rgb(37, 30, 94);
+    background-color: rgb(67, 90, 153);
+
+    border-radius: 10px;
+}
+
+.content-input {
+    color: whitesmoke;
+    font-size: 17px;
+}
+.content-input>label {
+    margin: 5px;
+}
+.content-input>input{
+    margin-right: 20px;
+}
+
+
+.add-button {
+    background-color: transparent;
+    border-radius: 20px;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;;
+
+    font-size: 17px;
+    margin-right: 20px;
+}
+.add-button:hover {
+    background-color:  whitesmoke;
+    color: rgb(67, 90, 153);
+}

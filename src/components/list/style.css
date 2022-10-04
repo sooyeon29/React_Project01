@@ -1,0 +1,25 @@
+div.working-box {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+div.done-box {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.workbox {
+    border: 5px solid rgb(212, 110, 110);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 5px;
+}
+
+.donebox {
+    border: 5px solid rgb(164, 212, 110);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 5px;
+}
