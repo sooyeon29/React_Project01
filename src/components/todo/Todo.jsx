@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css"
 
 function Todo({intodos, onDeleteHandler, onEditHandler}) {
-
+// ---> 부모 List로부터 props값을 받는다!
     // console.log(intodos)
     return (
         <div>
@@ -13,7 +13,8 @@ function Todo({intodos, onDeleteHandler, onEditHandler}) {
                     삭제하기
                 </button>
                 <button onClick={() => onEditHandler(intodos.id)}>
-                    {intodos.isDone ? '취소':'완료'}
+                    {intodos.isDone ? '취소':'완료'}  
+                    {/* false -> 완료 & ture -> 취소 */}
                 </button>
             </div>
         </div>

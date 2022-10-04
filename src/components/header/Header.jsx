@@ -11,3 +11,5 @@ function Header () {
 }
 
 export default Header
+
+// 해당값이 부모인 Todolist로 보내진다

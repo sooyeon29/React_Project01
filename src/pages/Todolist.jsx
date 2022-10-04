@@ -30,3 +30,7 @@ function TodoList () {
 }
 
 export default TodoList
+
+//자식 Header 에게 값을 받았다
+//자식 Form에게 todos={todos} setTodos={setTodos} 라는 값을 주고 나온 리턴값을 받았다
+//자식 List에게 todos={todos} setTodos={setTodos} 라는 값을 주고 나온 리턴값을 받았다
