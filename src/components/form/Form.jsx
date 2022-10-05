@@ -1,7 +1,9 @@
 import React, {useState} from "react";
 import "./style.css"
 
-let number = 3
+// let number = 3
+// -> let 으로 작성해주는 것보다는 useState를 이용하는게 좋음!
+
 function Form({todos, setTodos}) {
 // 구조분해 할당과 Props!!
 // 부모인 TodoList로 부터 {todos, setTodos}라는 props를 받았다
@@ -25,6 +27,8 @@ function Form({todos, setTodos}) {
     //여기서는 {name,value}
     //찾은 값을 통해 setTodo를 완성해준다
 
+    const [num, setNum] = useState(3)
+
     const onSubmitHandler = (event) => {
         event.preventDefault()
         //---> 기본 동작을 실행하지 않게해주는 메서드!!
@@ -35,10 +39,12 @@ function Form({todos, setTodos}) {
         if (todo.title.trim() === "" || todo.body.trim() === "") return
         //.trim()은 공백을 지워주는 메서드로 위의 if문의 경우 
         //작성한 사항의 앞뒤 공백을 지워주며, 빈칸이거나 스페이스바만 쳐서 값이 없는경우에는 값이 나오지 않는다
-        setTodos([...todos, {...todo, id: number}])
-        setTodo(firsttodo)   //---> 요거가 있어야지 추가하기 버튼을 누른 후 input박스가 비워진다 아니면 내가 입력한 값이 남아있다        
+        setTodos([...todos, {...todo, id: num}])
+        setTodo(firsttodo)   
+        //---> 요거가 있어야지 추가하기 버튼을 누른 후 input박스가 비워진다 아니면 내가 입력한 값이 남아있다        
         //setTodos의 값은 onChangeHandler에서 받은 todo객체의 값을 todos에 넣어준값
-        number++
+        setNum(num+1)
+        // number++
         //todos의 기본값으로 id: 1 과 2를 사용해주었으므로 함수시작전 number=3으로 주어줬음
         //그러므로 id는 3부터 ++된 숫자들로 들어감
         console.log(todos.id)
